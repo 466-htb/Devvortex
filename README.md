@@ -12,7 +12,7 @@ Since port 80 was open I decided to navigate to the website being hosted there a
 ![devvortex home](images/devvortex-home.png)
 My first instict was to look for hidden paths such as /admin and /login but those yielded no results.
 I then tried to automate this process with a tool called `dirbuster`. This unfortunately yielded no results as well.
-So, I then looked into possible subdomains. To check theses I used a tool called `ffuf`. I downloaded a a list of subdomains from github and used ffuf to check all of them.
+So, I then looked into possible subdomains. To check theses I used a tool called `ffuf`. I downloaded a list of [subdomains](https://github.com/rbsec/dnscan/blob/master/subdomains-10000.txt) from github and used ffuf to check all of them.
 ![ffuf results](images/ffuf-subdomain.png)
 FFuF revealed to me that there was a `dev` subdomain.
 

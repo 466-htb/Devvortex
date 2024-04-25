@@ -47,5 +47,5 @@ After running the hash through hashcat using the `rockyou.txt` dictionary that c
 ![cracked hash](images/cracked-hash.png)
 
 ## Privilege Escalation: Logan
-With the password I have recovered I am now able to switch to logans account using `su logan` in the reverse shell from earlier.
+With the password I have recovered I am now able to switch to logans account using `su logan` in the reverse shell from earlier.  
 ![user flag](images/user-flag.png)

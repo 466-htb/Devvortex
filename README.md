@@ -34,9 +34,12 @@ When I replaced the root url with the `dev.devvortex.htb` url and submited it in
 ![password](images/password.png)
 
 ## Reverse Shell
-Upon entering the admin portal my first thought was to upload a reverse shell. So, I naviagted to where the files were located and added a line of php code that gave me a reverse shell.
+Upon entering the admin portal my first thought was to upload a reverse shell. So, I naviagted to where the files were located and added a line of php code that gave me a reverse shell. The shell I used was from this random github repo [PHP reverse Shell](https://gist.github.com/rshipp/eee36684db07d234c1cc).
 ![reverse shell](images/reverse-shell.png)
 I then navigate to the home folder and found a user named logan with a file called `user.txt` which I am assuming is the flag. I tried to cat the file but I did not have the proper permissions. So, I then used `mysql` to login to the database and get the password for logan.
 ![mysql users](images/schema.png)
 For some reason mysql would not resond so I just kept hitting random keys until it printed the users which is why there are random spaces and letters in the screenshot. However, we eventually got the password for logan. sort of. Unfortunately it is hashed. 
 
+## Password Hash
+I looked up the hash online and found that it is a bcrypt, blowfish unix password. So, my first thought is to use hashcat to try and crack the hash as I used this program in cs 483.
+![password hash](images/password-hash.png)

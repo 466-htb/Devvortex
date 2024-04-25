@@ -43,7 +43,7 @@ For some reason mysql would not resond so I just kept hitting random keys until 
 ## Password Hash
 I looked up the hash online and found that it is a bcrypt, blowfish unix password. So, my first thought is to use hashcat to try and crack the hash as I used this program in cs 483.
 ![password hash](images/password-hash.png)
-After running the hash through hashcat using the `rockyou.txt` dictionary that comes with Kali I was able to crack the hash.
+After running the hash through hashcat using the `rockyou.txt` dictionary that comes with Kali I was able to crack the hash. I did run this on my machine however as it was very slow using the VM.
 ![cracked hash](images/cracked-hash.png)
 
 ## Privilege Escalation: Logan

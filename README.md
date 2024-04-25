@@ -35,4 +35,4 @@ When I replaced the root url with the `dev.devvortex.htb` url and submited it in
 
 ## Reverse Shell
 Upon entering the admin portal my first thought was to upload a reverse shell. So, I naviagted to where the files were located and added a line of php code that gave me a reverse shell.
-![reverse shell][images/reverse-shell.png]
+![reverse shell](images/reverse-shell.png)

@@ -54,8 +54,8 @@ With the password I have recovered I am now able to switch to logans account usi
 Since we are now logged into Logan's account, we need to find some way to upgrade our permissions to root. I have no idea how to do this so I started watching some videos on privilege escalation on YouTube. I came across this [video](https://www.youtube.com/watch?v=X80XZMeN7oU) which says that you can do `sudo -l` to see which programs a user is allowed to run as sudo. So, I did that and found that Logan can execute a program called `apport-cli` as sudo. 
 ![sudo -l](images/sudo-l.png)
 I found that `apport-cli` was vulnerable from looking on `Exploit Database` but I could not get any of there exploits to run. So I kept googling around and found a way to explot it using this [exploit](https://github.com/diego-tella/CVE-2023-1326-PoC) found on github.   
-![exploit](images/root-exploit.png)
+![exploit](images/root-exploit.png)   
 After running that I was able to get root and retrieve the flag.   
-![root flag](images/root-flag.png)
+![root flag](images/root-flag.png)   
 After submitting the root flag I had successfully pwned Devvortex.
 ![pwned devvortex](images/devvortex-pwned.png)

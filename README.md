@@ -49,3 +49,7 @@ After running the hash through hashcat using the `rockyou.txt` dictionary that c
 ## Privilege Escalation: Logan
 With the password I have recovered I am now able to switch to logans account using `su logan` in the reverse shell from earlier.  
 ![user flag](images/user-flag.png)
+
+## Privilege Escalation: Root
+Since we are now logged into Logan's account, we need to find some way to upgrade our permissions to root. I have no idea how to do this so I started watching some videos on privilege escalation on YouTube. I came across this [video](https://www.youtube.com/watch?v=X80XZMeN7oU) which says that you can do `sudo -l` to see which programs a user is allowed to run as sudo. So, I did that and found that Logan can execute a program called `apport-cli` as sudo. 
+![sudo -l](images/sudo-l.png)
